@@ -1,0 +1,48 @@
+/* 4. Escreva um algoritmo em pseudocódigo que leia 3 inteiros diferentes, e depois apresente a
+soma, o produto, o menor e o maior desses números. */
+
+Algoritmo: Soma, produto, número maior e número menor
+Variáveis:
+	n1 : inteiro
+	n2 : inteiro
+	n3 : inteiro
+	soma : inteiro
+	produto : inteiro
+
+INÍCIO
+	Escreva("Digite o primeiro número inteiro: ")
+	Leia(n1)
+	
+	Escreva("Digite o segundo número inteiro: ")
+	Leia(n2)
+
+	Escreva("Digite o terceiro número inteiro: ")
+	Leia(n3)
+	
+	soma <- n1 + n2 + n3
+	Escreva("A soma dos 3 números é: "+ soma)
+	
+	produto <- n1 * n2 * n3
+	Escreva("O produto dos 3 números é: "+ produto)
+
+	
+	Se (n1 > n2 && n1 > n3)
+	 Então Escreva(n1 +" é o número maior!")
+	 Senão	Início
+				Se (n2 > n1 && n2 > n3)
+					Então Escreva(n2 +" é o número maior!")
+					Senão Escreva(n3 +" é o número maior!")
+				Fimse
+			Fim
+	Fimse
+	
+	Se (n1 < n2 && n1 < n3)
+	 Então Escreva(n1 +" é o número menor!")
+	 Senão	Início
+				Se (n2 < n1 && n2 < n3)
+					Então Escreva(n2 +" é o número menor!")
+					Senão Escreva(n3 +" é o número menor!")
+				Fimse
+			Fim
+	Fimse
+FIM

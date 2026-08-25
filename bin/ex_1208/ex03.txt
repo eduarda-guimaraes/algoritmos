@@ -1,0 +1,24 @@
+/* 3.Escreva um algoritmo em pseudocódigo que peça ao usuário que digite 2 inteiros, obtenha os
+números e depois exiba o maior seguido das palavras “valor maior“. Se os números forem iguais,
+imprima a mensagem “valores iguais”. */
+
+Algoritmo: Número maior
+Variáveis:
+	n1 : inteiro
+	n2 : inteiro
+Início
+	Escreva("Digite um número inteiro: ")
+	Leia(n1)
+	
+	Escreva("Digite o segundo número inteiro: ")
+	Leia(n2)
+	
+	Se (n1 == n2)
+		Então Escreva ("Valores iguais!")
+		Senão
+				Se (n1 > n2)
+					Então Escreva(n1 +" valor maior")
+					Senão Escreva (n2 +" valor maior")	
+				FimSe
+	FimSe
+Fim
